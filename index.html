@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Accessible enterprise dashboard overview.">
+<title>Overview | Northstar Dashboard</title>
+<link rel="stylesheet" href="assets/css/styles.css">
+<script src="assets/js/app.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+<a class="brand" href="index.html">Northstar <span>Dashboard</span></a>
+<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">Menu</button>
+<nav id="primary-navigation" class="top-nav" aria-label="Primary navigation">
+<a href="index.html" aria-current="page">Overview</a><a href="reports.html">Reports</a><a href="settings.html">Settings</a>
+</nav>
+<p class="user-label">Signed in as <strong>Demo User</strong></p>
+</header>
+<div class="layout">
+<aside class="sidebar" aria-label="Dashboard sidebar">
+<nav aria-label="Dashboard sections"><h2 class="sidebar-heading">Workspace</h2><ul>
+<li><a href="#summary" aria-current="location">Summary</a></li><li><a href="#activity">Recent activity</a></li><li><a href="reports.html">All reports</a></li>
+</ul></nav>
+<section class="help-card" aria-labelledby="help-title"><h2 id="help-title">Need help?</h2><p>Review reports or update your preferences.</p><a href="settings.html">Open settings</a></section>
+</aside>
+<main id="main-content" class="main-content">
+<header class="page-heading"><p class="eyebrow">WORKSPACE / OVERVIEW</p><h1>Overview</h1><p>Monitor key activity and review workspace updates.</p></header>
+<section id="summary" aria-labelledby="summary-title">
+<div class="section-heading"><div><h2 id="summary-title">Summary</h2><p class="muted">Illustrative sample metrics</p></div><button class="button button-primary" type="button" data-open-dialog>View details</button></div>
+<div class="metric-grid">
+<article class="metric-card"><h3>Active projects</h3><p class="metric-value">12</p><p class="metric-note">Across all teams</p></article>
+<article class="metric-card"><h3>Open tasks</h3><p class="metric-value">38</p><p class="metric-note">Requires review</p></article>
+<article class="metric-card"><h3>Completed</h3><p class="metric-value">86%</p><p class="metric-note">This quarter</p></article>
+</div></section>
+<section id="activity" class="panel" aria-labelledby="activity-title">
+<div class="section-heading"><div><h2 id="activity-title">Recent activity</h2><p class="muted">Sample activity register</p></div><a href="reports.html">View all reports</a></div>
+<div class="table-wrap"><table><caption>Recent workspace activity, sample data</caption><thead><tr><th scope="col">Activity</th><th scope="col">Owner</th><th scope="col">Status</th><th scope="col">Updated</th></tr></thead><tbody>
+<tr><th scope="row">Quarterly review</th><td>Alex Morgan</td><td>Complete</td><td>Today</td></tr>
+<tr><th scope="row">Customer insights</th><td>Sam Lee</td><td>In progress</td><td>Yesterday</td></tr>
+<tr><th scope="row">Access review</th><td>Jordan Patel</td><td>Pending</td><td>2 days ago</td></tr>
+</tbody></table></div></section>
+<dialog id="details-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-description">
+<div class="dialog-content"><div class="section-heading"><h2 id="dialog-title">Workspace details</h2><button class="icon-button" type="button" data-close-dialog aria-label="Close dialog">×</button></div>
+<p id="dialog-description">This native HTML dialog can be opened and closed using the keyboard.</p><p>All figures in this starter dashboard are sample data.</p><button class="button button-primary" type="button" data-close-dialog>Close</button></div>
+</dialog>
+<footer class="site-footer"><p>Northstar Dashboard · Accessible HTML5 starter project</p></footer>
+</main></div></body></html>
